@@ -1,0 +1,16 @@
+C:\Users\Владимир\source\repos\ProxyPatern\ProxyPatern\obj\Debug\ProxyPattern.csproj.AssemblyReference.cache
+C:\Users\Владимир\source\repos\ProxyPatern\ProxyPatern\obj\Debug\ProxyPatern.Form1.resources
+C:\Users\Владимир\source\repos\ProxyPatern\ProxyPatern\obj\Debug\ProxyPatern.Properties.Resources.resources
+C:\Users\Владимир\source\repos\ProxyPatern\ProxyPatern\obj\Debug\ProxyPattern.csproj.GenerateResource.cache
+C:\Users\Владимир\source\repos\ProxyPatern\ProxyPatern\obj\Debug\ProxyPattern.csproj.CoreCompileInputs.cache
+C:\Users\Владимир\source\repos\ProxyPatern\ProxyPatern\bin\Debug\ProxyPatern.exe.config
+C:\Users\Владимир\source\repos\ProxyPatern\ProxyPatern\bin\Debug\ProxyPatern.exe
+C:\Users\Владимир\source\repos\ProxyPatern\ProxyPatern\bin\Debug\ProxyPatern.pdb
+C:\Users\Владимир\source\repos\ProxyPatern\ProxyPatern\bin\Debug\EntityFramework.dll
+C:\Users\Владимир\source\repos\ProxyPatern\ProxyPatern\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Владимир\source\repos\ProxyPatern\ProxyPatern\bin\Debug\EntityFramework.xml
+C:\Users\Владимир\source\repos\ProxyPatern\ProxyPatern\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Владимир\source\repos\ProxyPatern\ProxyPatern\obj\Debug\ProxyPattern.csproj.CopyComplete
+C:\Users\Владимир\source\repos\ProxyPatern\ProxyPatern\obj\Debug\ProxyPatern.exe
+C:\Users\Владимир\source\repos\ProxyPatern\ProxyPatern\obj\Debug\ProxyPatern.pdb
+C:\Users\Владимир\source\repos\ProxyPatern\ProxyPatern\obj\Debug\ProxyPatern.Migrations.Init.resources
