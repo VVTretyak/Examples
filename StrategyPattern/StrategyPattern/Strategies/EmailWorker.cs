@@ -1,12 +1,8 @@
-﻿//using Microsoft.Office.Interop.Word;
-using StrategyPattern.Strategies;
+﻿using StrategyPattern.Strategies;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StrategyPattern.Strategy
 {
@@ -14,7 +10,6 @@ namespace StrategyPattern.Strategy
     {
         private string msg;
         private string endEmail;
-
         public EmailWorker(string msg, string endEmail)
         {
             this.msg = msg;
@@ -34,7 +29,6 @@ namespace StrategyPattern.Strategy
                 // тема письма
                 m.Subject = "Strategy pattern";
                 // текст письма
-
                 m.Body = msg;
                 // письмо представляет код html
                 m.IsBodyHtml = true;
