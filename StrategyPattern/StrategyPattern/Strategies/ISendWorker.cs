@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace StrategyPattern.Strategies
 {
-    interface ISendWorker
+    public interface ISendWorker
     {
-      string Send();
+        string Send();
     }
 }

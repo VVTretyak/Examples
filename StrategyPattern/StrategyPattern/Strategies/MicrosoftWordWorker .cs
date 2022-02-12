@@ -1,4 +1,5 @@
-﻿using StrategyPattern.Strategies;
+﻿using Microsoft.Office.Interop.Word;
+using StrategyPattern.Strategies;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -20,14 +21,27 @@ namespace StrategyPattern.Strategy
 
         public string Send()
         {
-            //    Stream stream = new Stream();
-            //    using (StreamWriter sw = new StreamWriter(fileName, System.Text.Encoding.Default))
-            //    {
-            //        sw.Write(textToSave);
-            return "0";
-           }
-
-
-        //}
+            try
+            {
+                FileStream fileStream = null;
+                Document doc = null;
+                Application app = new Application();
+                fileStream = File.Create(path); 
+                fileStream.Close();
+                string source = path;
+                doc = app.Documents.Open(source);
+                doc.Activate();
+                string str = msgText;
+                Paragraph paragraph = doc.Content.Paragraphs.Add();
+                paragraph.Range.Text = str;
+                paragraph.Range.InsertParagraphAfter();
+                doc.Close();
+                return "The document has been saved";
+            }
+            catch (Exception ex)
+            {
+                return $"Error save document - {ex}";
+            }
+        }       
     }
 }
