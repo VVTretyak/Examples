@@ -1,0 +1,29 @@
+﻿@model SpaceFacts.Models.Fact
+@{
+    ViewData["Title"] = "Редактировать/Добавить новый факт";
+}
+
+<h4 align="center"> Добавить новый факт </h4>
+<body class="badge-dark">
+    <div class="d-flex justify-content-center align-items-center container ">
+        <form asp-action="NewEditFact" class="col-md-12">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group">
+                <a>Название факта</a>
+                <input asp-for="NameOfFact" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <a>Текст</a>
+                <textarea class="form-control" rows="12" asp-for="Content"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary btn-sm" />
+                <a asp-action="Index" class="btn btn-warning btn-sm "><i class="fa fa-table"></i> Back </a>
+            </div>
+        </form>
+    </div>
+</body>

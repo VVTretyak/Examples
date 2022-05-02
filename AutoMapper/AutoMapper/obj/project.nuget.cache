@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "MapAtJa0WKtuBh6Ov3CB0qAiYORAW3cDougFG2hpd8Mwrz+E7S72zf900CIMnUNcV8UCXfEqPbjim7LL+3o8Qg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Владимир\\source\\repos\\ConsoleApp8\\ConsoleApp8\\MyMapper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Владимир\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\Владимир\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Владимир\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

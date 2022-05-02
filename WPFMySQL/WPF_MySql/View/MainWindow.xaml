@@ -1,0 +1,63 @@
+﻿<Window x:Class="WPF_MySql.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_MySql.View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <TabControl Grid.Row="0" SelectedItem="{Binding SelectedTabItem}">
+            <TabItem Name="PersonTab">
+                <TabItem.Header>
+                    <TextBlock Text="People" FontSize="14"></TextBlock>
+                </TabItem.Header>
+
+                <TabItem.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Редактировать" Command="{Binding OpenEditPersonWindow}"/>
+                        <MenuItem Header="Удалить" Command="{Binding DeletePersonWindow}"/>
+                    </ContextMenu>
+                </TabItem.ContextMenu>
+                <ListView x:Name="ViewAllPersons" ItemsSource="{Binding AllPeople}"
+                          SelectedItem="{Binding SelectedPerson}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Name"
+                                            DisplayMemberBinding="{Binding Path=Name}"/>
+                            <GridViewColumn Header="Phone"
+                                            DisplayMemberBinding="{Binding Path=Phone}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+
+            <TabItem Name="SettingsTab">
+                <TabItem.Header>
+                    <TextBlock Text="Settings" FontSize="14"></TextBlock>
+                </TabItem.Header>
+            </TabItem>
+        </TabControl>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal"
+            HorizontalAlignment="Center">
+            <Button Content="Новая персона" Command="{Binding OpenAddPersonWindow}" FontSize="14" Height="40" Width="100"/>
+        </StackPanel>
+        <StatusBar  Grid.Row="2" Background="SeaGreen">
+            <TextBlock Text="Связь с базой данных:" Foreground="AntiqueWhite" Background="SeaGreen" FontSize="14"/>
+            <TextBlock x:Name="ViewStatusBar" Text="{Binding StateConnectionToDb}" Foreground="AntiqueWhite" Background="SeaGreen" FontSize="12" Height="15" Width="20" VerticalAlignment="Center"/>
+
+            <!--<Label VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,24,0,85" 
+          FontSize="18" Content="{Binding StateConnectionToDb}"/>-->
+            <!--<Button Content="Тест связи с БД" Command="{Binding CheckConnectionToDb}" FontSize="12" Height="20" Width="100"/>-->
+                       
+        </StatusBar>
+        
+        
+    </Grid>
+</Window>

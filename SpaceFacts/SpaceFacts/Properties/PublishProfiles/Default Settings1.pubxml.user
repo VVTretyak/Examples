@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Этот файл используется процессом публикации или упаковки вашего веб-проекта. Можно настроить поведение этого процесса,
+изменив этот файл MSBuild. Подробности см. на странице https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <History>True|2022-02-18T14:24:38.8784893Z;True|2022-02-18T15:49:40.0609610+02:00;True|2022-02-18T15:30:21.2796825+02:00;True|2022-02-18T15:27:41.8095613+02:00;True|2022-02-18T15:13:14.9789814+02:00;True|2022-02-18T15:06:05.1133945+02:00;True|2022-02-18T14:59:00.7841243+02:00;True|2022-02-18T14:55:39.7946283+02:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=SQL5079.site4now.net%3bInitial Catalog=db_a83193_vladimirvtretyak%3bUser Id=db_a83193_vladimirvtretyak_admin%3bPassword=ivan05112013</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

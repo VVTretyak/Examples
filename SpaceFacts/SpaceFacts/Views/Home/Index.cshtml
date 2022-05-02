@@ -1,0 +1,45 @@
+﻿@model IEnumerable<SpaceFacts.Models.Fact>
+@{
+    ViewData["Title"] = "Home Page";
+}
+@{int i = 0; }
+<body class="badge-dark">
+    <div class="text-center">
+        <table class="table table-responsive text-light bg-dark table-bordered">
+            <thead>
+                <tr>
+                    <th class="text-center text-warning text-uppercase">
+                        №
+                    </th>
+                    <th class="text-center text-warning text-uppercase col-md-12">
+                        Название факта
+                    </th>
+                    <th class="text-center text-warning text-uppercase">
+                        <a asp-action="AddOrEdit" class="btn btn-outline-success"><i class="far fa-plus-square"></i> +Факт </a>
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                @foreach (var item in Model)
+                {
+                    i++;
+                    <tr>
+                        <td class="text-center">
+                            @i
+                        </td>
+                        <td class="text-center">
+                            @Html.DisplayFor(modelItem => item.NameOfFact)
+                        </td>
+
+                        <td class="text-center">
+                            <a asp-action="AddOrEdit" asp-controller="Home" asp-route-id="@item.Id" class="text-truncate ml-1 text-center">Редактировать</a>
+                            <a asp-action="ShowFact" asp-controller="Home" asp-route-id="@item.Id" class="text-truncate ml-1 text-center">Детально</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>

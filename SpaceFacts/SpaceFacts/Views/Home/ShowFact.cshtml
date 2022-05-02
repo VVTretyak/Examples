@@ -1,0 +1,12 @@
+﻿@model SpaceFacts.Models.Fact
+@{
+    ViewData["Title"] = "Подробно о факте";
+}
+
+<h4 align="center" class="text-light">"@Html.DisplayFor(model => model.NameOfFact)"</h4>
+<body class="badge-dark">
+    <div class="form-group">
+        <textarea disabled class="form-control" rows="12"> @Model.Content</textarea>
+    </div>
+</body>
+
