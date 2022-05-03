@@ -1,0 +1,12 @@
+C:\Users\Владимир\source\repos\AccessTest\AccessTestV2\bin\Debug\AccessTestV2.exe.config
+C:\Users\Владимир\source\repos\AccessTest\AccessTestV2\bin\Debug\AccessTestV2.exe
+C:\Users\Владимир\source\repos\AccessTest\AccessTestV2\bin\Debug\AccessTestV2.pdb
+C:\Users\Владимир\source\repos\AccessTest\AccessTestV2\obj\Debug\AccessTestV2.csproj.AssemblyReference.cache
+C:\Users\Владимир\source\repos\AccessTest\AccessTestV2\obj\Debug\AccessTestV2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Владимир\source\repos\AccessTest\AccessTestV2\obj\Debug\AccessTestV2.Form1.resources
+C:\Users\Владимир\source\repos\AccessTest\AccessTestV2\obj\Debug\AccessTestV2.Properties.Resources.resources
+C:\Users\Владимир\source\repos\AccessTest\AccessTestV2\obj\Debug\AccessTestV2.csproj.GenerateResource.cache
+C:\Users\Владимир\source\repos\AccessTest\AccessTestV2\obj\Debug\AccessTestV2.csproj.CoreCompileInputs.cache
+C:\Users\Владимир\source\repos\AccessTest\AccessTestV2\obj\Debug\AccessTestV2.exe
+C:\Users\Владимир\source\repos\AccessTest\AccessTestV2\obj\Debug\AccessTestV2.pdb
+C:\Users\Владимир\source\repos\AccessTest\AccessTestV2\bin\Debug\AccessDbTest.mdb
